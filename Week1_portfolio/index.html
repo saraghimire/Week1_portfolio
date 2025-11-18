@@ -1,30 +1,87 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title> My Portfolio </title>
-        <link rel="stylesheet" href="css/style.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Sara Ghimire</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#business"> Business </a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    </head>
-    <body>
-        <header>
-            <h1> Hii, My name is Sara Ghimire Kshetri </h1>
-            <p> Welcome to my Portfolio Website </p>
-        </header>
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h2>Welcome to My Portfolio</h2>
+                <a href="#projects" class="btn">View My Work</a>
+            </div>
+        </section>
 
         <section id="about">
             <h2>About Me</h2>
-            <p> Currently pursuing Bcs in Biranagar International College. I'm Working as an IT intern.</p>
-
+            <div class="about-content">
+                <img src="images/saraghimire.png" alt="Sara Ghimire Kshetri" width="200" height="200">
+                <p>Hello! I'm Sara Ghimire Kshetri,currently pursuing Bachelors in Computer Science at BIC. I'm an IT intern and also own a small business.</p>
+            </div>
         </section>
 
-        <section id="project">
-            <h2> My Projects </h2>
-            <p> Ceaser Cipher <br> Tic-Tac-toe <br> Weather App <br> Banking System <br> Traffic Management Game</p>
+        <section id="business">
+            <h2> Sayra Jewels </h2>
+            <div class="about-business">
+                <img src="images/sayra_logo.png" width="300" height="300" >
+                <p> Sayra Jewels is a online based traditional jewellery business. </p>
+            </div>
         </section>
 
-        <section id="Contact">
-            <h2> Contact Info</h2>
-            <p>email: saraghimirekshetri@gmail.com <br> contact no. : 98xxxxxxxx</p>
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="project-gallery">
+                <div class="project-item">
+                    <img src="images/weatherappimg.jpg" alt="Project 1">
+                    <h3>Project One</h3>
+                    <p>Weather APP</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+                <div class="project-item">
+                    <img src="images/weatherappimg.jpg" alt="Project 2">
+                    <h3>Project Two</h3>
+                    <p>Ceaser Cipher</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+                <div class="project-item">
+                    <img src="images/weatherappimg.jpg" alt="Project 3">
+                    <h3>Project Three</h3>
+                    <p>Banking System</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
         </section>
-    </body>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+    </footer>
+</body>
 </html>
